@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import SD from './components/SpeedDial'
 import ImageCard from './components/Card'
+import PropForm from './components/Form'
 
 function App() {
   return (
@@ -12,7 +13,9 @@ function App() {
       title='Welcom to neuChat'
       actionOne='SignIn'
       actionTwo='Docs'
-      actionThree='Demos'
+      propButtOne= {<PropForm buttonType='LogIn'/>}
+      propButtTwo= {<PropForm buttonType='Registar'/>}
+      propButtThree= {<PropForm buttonType='Docs'/>}
       />
       <SD />
     </div>

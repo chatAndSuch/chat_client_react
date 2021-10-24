@@ -33,14 +33,10 @@ export default function ImageCard(props) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" variant="contained">
-        {props.actionOne}
-        </Button><Button size="small" variant="contained" color='secondary'>
-        {props.actionTwo}
-        </Button>
-        <Button size="small" variant="contained">
-        {props.actionThree}
-        </Button>
+        {props.propButtOne}
+        {props.propButtTwo}
+        {props.propButtThree}
+       
       </CardActions>
     </Card>
     </ThemeProvider>
