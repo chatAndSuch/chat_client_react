@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import SD from './components/SpeedDial'
+import ImageCard from './components/Card'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ImageCard 
+      img="https://www.romamoulding.com/wp-content/uploads/2014/03/Livechat.jpg"
+      alt='this is alt text'
+      title='Welcom to neuChat'
+      actionOne='SignIn'
+      actionTwo='Docs'
+      actionThree='Demos'
+      />
+      <SD />
     </div>
   );
 }
