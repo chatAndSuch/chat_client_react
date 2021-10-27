@@ -36,7 +36,6 @@ export default function ImageCard(props) {
         {props.propButtOne}
         {props.propButtTwo}
         {props.propButtThree}
-       
       </CardActions>
     </Card>
     </ThemeProvider>
